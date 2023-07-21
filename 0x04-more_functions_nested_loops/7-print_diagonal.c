@@ -5,11 +5,10 @@
  *
  * @n: is the number of times the \ character
  *	should be printed
-*/
-
+ */
 void print_diagonal(int n)
 {
-	int postn. space;
+	int postn, space;
 
 	if (n <= 0)
 		_putchar('\n');
