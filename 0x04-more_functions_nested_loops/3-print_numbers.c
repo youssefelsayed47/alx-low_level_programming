@@ -6,9 +6,10 @@
  *
  * Return: return always 0 (success)
 */
+
 int print_numbers(void)
 {
-	int nux = 0;
+	int num = 0;
 
 	do {
 		_putchar(num + 48);
