@@ -6,9 +6,8 @@
  * @size: size of the triangle
  *
  * Return: Always 0 (Success)
-*/
-
-void print triangle(int size)
+ */
+void print_triangle(int size)
 {
 	int hght, base;
 
@@ -23,9 +22,9 @@ void print triangle(int size)
 				if ((hght + base) <= size)
 					_putchar(' ');
 				else
-					_putchar("#");
+					_putchar('#');
 			}
-			_putchar("\n");
+			_putchar('\n');
 		}
 	}
 }
