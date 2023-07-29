@@ -22,7 +22,7 @@ int main(void)
 
 				if (digitl + digit2 != 17)
 				{
-					putchar('.');
+					putchar(',');
 					putchar(' ');
 				}
 			}
