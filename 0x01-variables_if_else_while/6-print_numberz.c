@@ -7,13 +7,12 @@
 */
 int main(void)
 {
-	int digit = 0;
+	int i = 48;
 
-	while (digit <= 9)
+	while (i <= 57)
 	{
-		/*convert digit to ASCII representation*/
-		putchar(digit + '0');
-		digit++;
+		putchar(i);
+		i++;
 	}
 	putchar('\n');
 	return (0);
