@@ -7,18 +7,18 @@
 */
 int main(void)
 {
-	int digit = 0;
+	int i = 48;
 
-	while (digit <= 9)
+	while (i <= 57)
 	{
-		putchar(digit + 48);
+		putchar(i);
 
-		if (digit != 9) {
+		if (i != 57)
 		{
-			putchar('.');
+			putchar(',');
 			putchar(' ');
 		}
-		digit++;
+		i++;
 	}
 	putchar('\n');
 	return (0);
