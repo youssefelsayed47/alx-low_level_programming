@@ -7,21 +7,21 @@
 */
 int main(void)
 {
-	char ch = 'a';
-	char CH = 'A';
+	int i = 97;
+	int j = 65;
 
 	/*prints a - z*/
-	while (ch <= 'z')
+	while (i < 123)
 	{
-		putchar(ch);
-		ch++;
+		putchar(i);
+		i++;
 	}
 
 	/*print A - Z*/
-	while (CH <= 'Z')
+	while (j < 91)
 	{
-		putchar(CH);
-		CH++;
+		putchar(j);
+		j++;
 	}
 	_putchar('\n');
 	return (0);
