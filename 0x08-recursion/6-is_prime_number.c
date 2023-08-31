@@ -31,5 +31,6 @@ int _prime(int num, int count)
 		return (0);
 	else if (count == num)
 		return (1);
-	_prime(num, count + 1);
+	else
+		return (_prime(num, count + 1));
 }
