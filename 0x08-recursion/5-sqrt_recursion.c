@@ -30,7 +30,7 @@ int sqrt_2(int num, int count)
 	if (square == num)
 		return (count);
 	else if (square < num)
-		sqrt_2(num, count + 1);
+		return (sqrt_2(num, count + 1));
 	else
 		return (-1);
 }
