@@ -12,7 +12,7 @@ int _prime(int num, int count);
 
 int is_prime_number(int n)
 {
-	_prime(n, 2);
+	return (_prime(n, 2));
 }
 
 /**
