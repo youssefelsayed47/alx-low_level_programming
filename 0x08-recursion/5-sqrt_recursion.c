@@ -2,6 +2,18 @@
 #include <stdio.h>
 
 /**
+ * _sqrt_recursion - a function that returns the natural
+ *		square root of a number.
+ * @n: the number to calc the square
+ * Return: the square of the number
+*/
+
+int _sqrt_recursion(int n)
+{
+	return (sqrt_2(n, 0));
+}
+
+/**
  * sqrt_2 - helper function
  *
  * @num: number to calc the square
@@ -19,16 +31,4 @@ int sqrt_2(int num, int count)
 		sqrt_2(num, count + 1);
 	else
 		return (-1);
-}
-
-/**
- * _sqrt_recursion - a function that returns the natural
- *		square root of a number.
- * @n: the number to calc the square
- * Return: the square of the number
-*/
-
-int _sqrt_recursion(int n)
-{
-	return (sqrt_2(n, 0));
 }
