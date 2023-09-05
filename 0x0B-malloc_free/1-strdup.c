@@ -14,7 +14,12 @@ char *_strdup(char *str)
 {
 	char *arr_chars_str;
 	int counter = 0;
-	int size = sizeof(str);
+	int count = 0;
+	int size;
+
+	while (str[count] != '\0')
+		count++;
+	size = count + 1;
 
 	if (str == NULL)
 		return (NULL);
