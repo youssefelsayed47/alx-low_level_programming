@@ -2,8 +2,8 @@
 #define _function_like_macro_h
 
 #define ABS(x)({\
-	if (x < 0)\
-		x = x / (-1);\
+	if (x < 0{)\
+		x = x / (-1);}\
 	x;\
 })
 
