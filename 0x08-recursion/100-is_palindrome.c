@@ -11,16 +11,13 @@
 
 int check_is_palindrome(char *str, int index, int i, int j)
 {
-	if (str[i] == str[j] && j != index)
-	{
-		i--;
-		j++;
-		return (1 * check_is_palindrome(str, index, i, j));
-	}
-	else if (str[i] != str[j])
+	if (str[i] != str[j])
 		return (0);
-	else if (str[i] == str[j] && j == index)
+	if (str[i] == str[j] && j == index)
 		return (1);
+	i--;
+	j++;
+	return (1 * check_is_palindrome(str, index, i, j));
 }
 
 /**
