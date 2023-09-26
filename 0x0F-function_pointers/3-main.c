@@ -5,7 +5,7 @@
  * @argv: argument vector
  * Return: Always 0.
 */
-int main(int argc, char *argv)
+int main(int argc, char **argv)
 {
 	int (*op_func)(int, int), a, b;
 
