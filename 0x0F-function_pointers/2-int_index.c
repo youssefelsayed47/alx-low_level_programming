@@ -11,20 +11,9 @@
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int i = 0;
+	int *end = array + size - 1;
 
-	if (size <= 0)
-		return (-1);
-	while (i < size)
-	{
-		int result = cmp(*array);
-
-		if (result != 0)
-			break;
-		array++;
-		i++;
-	}
-	if (i == size)
-		return (-1);
-	return (i);
+	if (array && size && action)
+		while (array <= end)
+			action(*array++);
 }
