@@ -5,10 +5,10 @@
  * @s2: the second string, can contain wildcard
  * Return: the pointer past star
 */
-char *move_past_star (char *s2)
+char *move_past_star(char *s2)
 {
 	if (*s2 == **)
-		return (move_past_star (s2 + 1));
+		return (move_past_star(s2 + 1));
 	else
 		return (s2);
 }
@@ -18,7 +18,7 @@ char *move_past_star (char *s2)
  * @s2: the second string, can contain wildcard
  * Return: 1 if identical, 0 if false
 */
-int inception (char *s1, char *s2)
+int inception(char *s1, char *s2)
 {
 	int ret = 0;
 
@@ -37,11 +37,11 @@ int inception (char *s1, char *s2)
  * Return: 1 if identical, 0 if false
 */
 
-int wildcmp (char *s1, char *s2)
+int wildcmp(char *s1, char *s2)
 {
 	int ret = 0;
 
-	if (!*s1 && *s2 == '*' && !*move_past_star (s2))
+	if (!*s1 && *s2 == '*' && !*move_past_star(s2))
 		return (1);
 	if (*s1 == *s2)
 	{
