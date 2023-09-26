@@ -1,3 +1,4 @@
+#include "3-calc.h"
 
 /**
  * op_add - perform add operation.
@@ -7,7 +8,7 @@
 */
 int op_add(int a, int b)
 {
-	return(a + b);
+	return (a + b);
 }
 /**
  * op_sub - perform sub operation.
@@ -17,7 +18,7 @@ int op_add(int a, int b)
 */
 int op_sub(int a, int b)
 {
-	return(a - b);
+	return (a - b);
 }
 /**
  * op_mul - perform mul operation.
@@ -27,7 +28,7 @@ int op_sub(int a, int b)
 */
 int op_mul(int a, int b)
 {
-	return(a * b);
+	return (a * b);
 }
 /**
  * op_div - perform divosion operation.
@@ -37,7 +38,7 @@ int op_mul(int a, int b)
 */
 int op_div(int a, int b)
 {
-	return(a / b);
+	return (a / b);
 }
 /**
  * op_mod - perform modulas operation.
@@ -47,5 +48,5 @@ int op_div(int a, int b)
 */
 int op_mod(int a, int b)
 {
-	return(a % b);
+	return (a % b);
 }
