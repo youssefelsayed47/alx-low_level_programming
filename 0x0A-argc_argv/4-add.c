@@ -11,23 +11,17 @@
 
 int main(int argc, char *argv[])
 {
-	int i = 1, sum = 0;
+	int sum = 0;
+	char *c;
 
-	if (argc == 1)
+	while (--argc)
 	{
-		printf("0\n");
-		return (0);
-	}
-	while (i < argc)
-	{
-		if (atoi(argv[i]) == 0 && *argv[i] != 48)
-		{
-			printf("Error\n");
-			return (1);
-		}
-		sum = sum + atoi(argv[i]);
+		for (c = argv[argc]; *c; c++)
+			if (*argv[i] < '0' || *argv[i] > '9')
+				return (printf("Error\n"), 1);
+		sum += atoi(argv[argc]);
 		i++;
 	}
 	printf("%i\n", sum);
-	return (sum);
+	return (0);
 }
